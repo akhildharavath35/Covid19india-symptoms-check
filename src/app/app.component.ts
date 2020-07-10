@@ -86,6 +86,7 @@ export class AppComponent {
     this.nextbutton = true;
     this.currentquestion = this.questions[0]
     this.button1 = false;
+    this.finalResult="LOW";
   }
   i=0;
   j=0;
@@ -154,6 +155,8 @@ export class AppComponent {
     this.results=[];
     this.j = 0;
     this.i = 0;
+    this.finalResult="LOW";
+
   }
 
   
