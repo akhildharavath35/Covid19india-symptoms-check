@@ -13,8 +13,8 @@
             <marquee behaviour="scroll" direction="left">Wash your hands often | Avoid close contact | Cover your mouth and nose with a cloth face cover | Cover coughs and sneezes | Clean and disinfect | Monitor Your Health Daily</marquee>
           </div>
           <div >
-          <div *ngIf="!div1" style="text-align: center;padding: 2%;">
-            <img src="../assets/Images/240_F_337387862_RLupy2Ts2bONn0biXdCAROpFrS9cwjXE.jpg" width="70%" >
+          <div class="logoimg" *ngIf="!div1" >
+            <img  src="../assets/Images/240_F_337387862_RLupy2Ts2bONn0biXdCAROpFrS9cwjXE.jpg" width="70%" >
           </div>
 
 
@@ -22,8 +22,8 @@
 
             
          
-            <div style="text-align: center; padding:3%">
-              <img src="../assets/Images/{{j+1}}.jpg" width="70%" class="symImg" >
+            <div class="mt-2" style="text-align: center; padding:3%">
+              <img src="../assets/Images/{{j+1}}.jpg" width="78%" class="symImg" >
             </div>
             <div style="text-align: center;" class="testHeading">
               <h2>{{currentquestion}}</h2>
@@ -34,18 +34,18 @@
                     <div class="col-2">
 
                     </div>
-                    <div class="col-4 p-3" style="text-align: right;">
+                    <div class="col-4 pl-3" style="text-align: right;">
                        
                         <button type="button"  (click)="yesnoFun($event)" class="btn btn-default" value="Yes">Yes</button>
                       
                     </div>
-                    <div class="col-4 p-3" style="text-align: left; ">
+                    <div class="col-4 pl-3" style="text-align: left; ">
                       
                         <button type="button"  (click)="yesnoFun($event)" class="btn btn-default"  value="No">No</button>
                      
                     </div>
 
-                    <div class="col-2" style="text-align: end; padding: 3%;">
+                    <div class="col-2 pl-2" style="text-align: end; border: none;">
                       <div >
                         <button type="button"  (click)="nextQuestion()" class="btn btn-next">➤</button>                      </div>
                     </div>

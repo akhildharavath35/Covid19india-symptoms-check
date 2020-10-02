@@ -105,7 +105,7 @@ table  {
 
   .testHeading
   {
-    padding: 5%;
+    padding: 5% 5% 2% 5%;
   }
 
   .btn-default:hover {
@@ -237,10 +237,15 @@ table  {
         text-decoration:none;
         }
 
+    .logoimg
+    {
+      text-align: center;padding: 2%;
+    }
+
 
   /*-------Media Queries--------*/
 
-  @media only screen and (max-width: 380px)
+  @media only screen and (max-width: 500px)
   {
     .search_icon{
       visibility:hidden;
@@ -249,19 +254,23 @@ table  {
   }
 
 
+
   @media only screen and (max-width: 510px) {
     .symImg
     {
       height: 120px;
     }
 
+    .logoimg
+    {
+      text-align: center;padding: 10%;
+    }
+
     .t0helpline
     {
       font-size: small;
     }
-    img{
-      padding:7%;
-    }
+    
 
     .t1headers,.t1todaycases{
       font-size: medium;

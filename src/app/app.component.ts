@@ -86,6 +86,7 @@ export class AppComponent {
     this.nextbutton = true;
     this.currentquestion = this.questions[0]
     this.button1 = false;
+    this.finalResult = "LOW";
   }
   i=0;
   j=0;
@@ -95,7 +96,7 @@ export class AppComponent {
 
   yesnoFun(event){
     var e = event.target;
-    console.log(e.value)
+    //console.log(e.value)
     this.results[this.j] = e.value;
     
     //console.log(this.results)
@@ -103,7 +104,7 @@ export class AppComponent {
 
   nextQuestion()
   {
-    console.log(this.result[this.j])
+    // console.log(this.result[this.j])
     if(this.results[this.j] == null)
     {
       alert("Please select Yes or No.")
@@ -125,11 +126,12 @@ export class AppComponent {
         this.finalResult="LOW";
       }
     }
+
     this.j+=1;
     this.div1=false;
     this.i+=1;
     this.currentquestion = this.questions[this.i];
-    console.log(this.currentquestion)
+    // console.log(this.currentquestion)
     if(this.i > this.questions.length - 1 )
     {
       console.log(this.i)
@@ -138,9 +140,9 @@ export class AppComponent {
       return;
     }
     this.div1=true;
-    console.log("question: true")
-    console.log("results array:",this.results)
-    console.log("Result Count (Yes)",this.resultCount)
+    // console.log("question: true")
+    // console.log("results array:",this.results)
+    // console.log("Result Count (Yes)",this.resultCount)
   }
 
   retakeTest()
@@ -154,6 +156,7 @@ export class AppComponent {
     this.results=[];
     this.j = 0;
     this.i = 0;
+    this.finalResult="LOW";
   }
 
   
